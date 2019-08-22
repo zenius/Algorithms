@@ -1,6 +1,6 @@
 // algorithms.js
 
-binarySearch(array, targetValue) {
+function binarySearch(array, targetValue) {
 	let min = 0;
 	let max = array.length - 1;
 	let guess = Math.floor((min+max)/2);
