@@ -4,8 +4,8 @@ var insert = function(array, rightIndex, value) {
   var length = array.length; 
   var positionToInsert = rightIndex + 1; 
   for(var index = rightIndex ; index >= 0 && array[index] > value; index--) { 
-     // if(array[index] <= value) { break;} 
-     // is equivaluent to : array[index] > value
+     // array[index] <= value is equivaluent to : array[index] > value 
+     if(array[index] <= value) { break;} 
       positionToInsert = index; 
       array[index+1] = array[index];
   }
