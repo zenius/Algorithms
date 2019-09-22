@@ -18,7 +18,7 @@ function binarySearch(array, targetValue) {
 		else { 
       max = guess - 1; 
     }
-		guess = Math.floor((max+min)/2);
+		guess = Math.floor((max + min)/2);
 	}
 };
 
@@ -28,7 +28,7 @@ function binarySearch(array, targetValue) {
 	let max = array.length - 1;
 	let guess = Math.floor((min+max)/2);
 
-	while(min<=max) {
+	while(min <= max) {
 		if(array[guess] === targetValue) { 
       // target found 
       return guess; 
@@ -39,8 +39,9 @@ function binarySearch(array, targetValue) {
 		else { 
       max = guess - 1; 
     }
-		guess = Math.floor((max+min)/2);
+		guess = Math.floor((max + min)/2);
 	}
-  
+ 
+	// target not found
   return -1; 
 };
