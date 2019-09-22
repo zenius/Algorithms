@@ -1,9 +1,9 @@
 /*Is string a palindrome?*/
 
 const isPalindrome = function (string) {
-	let length = string.length; 
+	const length = string.length; 
 
-	if(length === 0 || length === 1) {
+	if(length < 2) {
 		return true; 
 	} 
 
@@ -11,7 +11,7 @@ const isPalindrome = function (string) {
 		return false;  
 	}
 
-	let newString = string.substring(1, length-1); 
+	const newString = string.substring(1, length-1); 
 
 	return isPalindrome(newString); 
 }
