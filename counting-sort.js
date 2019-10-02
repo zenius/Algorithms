@@ -1,4 +1,4 @@
-// Note: Here is the range of the numbers is: 0 to 99
+// Note: Here,range of numbers is: 0 to 99
 
 const countingSort = function(array) {
   const length = array.length;
